@@ -45,7 +45,7 @@ public class Code003_MinSum {
     public static void main(String[] args) {
         int[] arr = Code001_SortSolution.generateRandomArray(6, 10);
         int[] arr2 = {1,3,4,2,5};
-        Code001_SortSolution.ptintArr(arr);
+        Code001_SortSolution.printArr(arr);
         System.out.println(mergeSort(arr));
     }
 }

@@ -34,6 +34,6 @@ public class Code005_LessInleftBiggerinright {
     public static void main(String[] args) {
         int[] arr = {5,4,5,6,7,8,9,4,2};
         halfSort(arr, 5);
-        Code001_SortSolution.ptintArr(arr);
+        Code001_SortSolution.printArr(arr);
     }
 }

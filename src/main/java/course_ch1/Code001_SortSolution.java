@@ -47,6 +47,14 @@ public class Code001_SortSolution {
     }
 
     /** 归并排序 **/
+
+    public static void mergeSort(int[] arr) {
+        if(arr == null || arr.length < 2) {
+            return;
+        }
+        mergeSort(arr, 0, arr.length - 1);
+    }
+
     public static void mergeSort(int[] arr, int l, int r){
         if(l == r) {
             return;
@@ -57,12 +65,7 @@ public class Code001_SortSolution {
         merge(arr, l, mid, r);
     }
 
-    public static void mergeSort(int[] arr) {
-        if(arr == null || arr.length < 2) {
-            return;
-        }
-        mergeSort(arr, 0, arr.length - 1);
-    }
+    /** 合并两个子序列 */
     public static void merge(int[] arr, int l, int mid, int r) {
         int[] help = new int[r - l + 1];
         int i = 0;
@@ -83,6 +86,8 @@ public class Code001_SortSolution {
         }
     }
 
+
+    /** 改进版快速排序 */
     public static void quickSort(int[] arr) {
         if(arr== null || arr.length < 2) {
             return;
@@ -92,6 +97,7 @@ public class Code001_SortSolution {
 
     public static void quickSort(int[] arr, int l, int r) {
         if(l < r) {
+            //骚操作1
             swap(arr, (int) (l + Math.random() * (r - l + 1)), r);
             int[] part = partion(arr, l, r);
             quickSort(arr, l, part[0] - 1);
@@ -99,6 +105,7 @@ public class Code001_SortSolution {
         }
     }
 
+    /** 得出相等区间的index范围 */
     public static int[] partion(int[] arr, int l, int r) {
         int p1 = l - 1;
         int p2 = r;
@@ -112,6 +119,7 @@ public class Code001_SortSolution {
                 cur++;
             }
         }
+        //骚操作1恢复
         swap(arr, r, p2);
         return new int[]{p1 + 1, p2};
     }
@@ -123,6 +131,58 @@ public class Code001_SortSolution {
         arr[j] = tmp;
     }
 
+    /**堆排序 */
+    public static void heapSort(int[] arr) {
+        if(arr == null || arr.length < 2) {
+            return;
+        }
+
+        for(int i=0; i<arr.length; i++) {
+            heapInsert(arr, i);
+
+        }
+        int size = arr.length;
+        swap(arr, 0, --size);
+        while(size > 0) {
+            heapify(arr, 0, size);
+            swap(arr, 0, --size);
+        }
+
+    }
+
+    /** 将数组按照大根堆的方式排好 */
+    public static void heapInsert(int[] arr, int index) {
+        while(arr[index] > arr[(index - 1) / 2]) {
+            swap(arr, index, (index - 1) / 2);
+            index = (index - 1) / 2;
+        }
+    }
+
+    /** 交换之后将变化的堆仍然调整为大根堆 */
+    public static void heapify(int[] arr, int index, int size) {
+        int left = index * 2 + 1;
+        while(left < size) {
+            //左右孩子中较大的值的index。 先判断右孩子是否越界
+            int largest = left + 1 < size && arr[left + 1] > arr[left] ? left + 1 : left;
+
+            largest = arr[largest] > arr[index] ? largest : index;
+            //如果较大的比当前index值要大，则当前数在大根堆中向下沉
+            if(largest == index) {
+                break;
+            }
+            swap(arr, index, largest);
+            index = largest;
+            left = index * 2 + 1;
+
+//            if(arr[largest] > arr[index]) {
+//                swap(arr, index, largest);
+//                index = largest;
+//                left = index * 2 + 1;
+//            } else {
+//                break;
+//            }
+        }
+    }
 
     /**
      * for test
@@ -167,7 +227,7 @@ public class Code001_SortSolution {
         return true;
     }
 
-    public static void ptintArr(int[] arr) {
+    public static void printArr(int[] arr) {
         if (arr == null) {
             return;
         }
@@ -186,12 +246,13 @@ public class Code001_SortSolution {
             int[] arr2 = copyArray(arr);
 
             comparator(arr1);
-            quickSort(arr2,0,arr2.length-1);
+//            quickSort(arr2,0,arr2.length-1);
+            heapSort(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
-                ptintArr(arr);
-                ptintArr(arr1);
-                ptintArr(arr2);
+                printArr(arr);
+                printArr(arr1);
+                printArr(arr2);
                 break;
             }
         }
@@ -199,8 +260,8 @@ public class Code001_SortSolution {
 
         int[] arr = generateRandomArray(10, 20);
         comparator(arr);
-        ptintArr(arr);
-        quickSort(arr, 0, arr.length-1);
-        ptintArr(arr);
+        printArr(arr);
+        heapSort(arr);
+        printArr(arr);
     }
 }

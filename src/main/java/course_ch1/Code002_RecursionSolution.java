@@ -21,7 +21,7 @@ public class Code002_RecursionSolution {
     public static void main(String[] args) {
         int[] arr = Code001_SortSolution.generateRandomArray(10, 1000);
         int max = getMax(arr);
-        Code001_SortSolution.ptintArr(arr);
+        Code001_SortSolution.printArr(arr);
         System.out.println(max);
     }
 }

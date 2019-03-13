@@ -1,4 +1,4 @@
-import day2.Solution;
+import leetcode.Solution;
 import org.junit.Test;
 
 public class AlgorithmTest {

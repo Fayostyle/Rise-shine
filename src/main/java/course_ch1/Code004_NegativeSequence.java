@@ -51,6 +51,6 @@ public class Code004_NegativeSequence {
     public static void main(String[] args) {
         int[] arr = {5,4,3,2,2};
         selectNegetive(arr);
-        Code001_SortSolution.ptintArr(arr);
+        Code001_SortSolution.printArr(arr);
     }
 }
