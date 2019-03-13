@@ -83,11 +83,44 @@ public class Code001_SortSolution {
         }
     }
 
+    public static void quickSort(int[] arr) {
+        if(arr== null || arr.length < 2) {
+            return;
+        }
+        quickSort(arr, 0, arr.length - 1);
+    }
+
+    public static void quickSort(int[] arr, int l, int r) {
+        if(l < r) {
+            swap(arr, (int) (l + Math.random() * (r - l + 1)), r);
+            int[] part = partion(arr, l, r);
+            quickSort(arr, l, part[0] - 1);
+            quickSort(arr, part[1] + 1, r);
+        }
+    }
+
+    public static int[] partion(int[] arr, int l, int r) {
+        int p1 = l - 1;
+        int p2 = r;
+        int cur = l;
+        while(cur < p2) {
+            if(arr[cur] < arr[r]) {
+                swap(arr, ++p1, cur++);
+            } else if(arr[cur] > arr[r]) {
+                swap(arr, --p2, cur);
+            } else {
+                cur++;
+            }
+        }
+        swap(arr, r, p2);
+        return new int[]{p1 + 1, p2};
+    }
+
 
     public static void swap(int[] arr, int i, int j) {
-        arr[i] = arr[i] ^ arr[j];
-        arr[j] = arr[i] ^ arr[j];
-        arr[i] = arr[i] ^ arr[j];
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
     }
 
 
@@ -153,7 +186,7 @@ public class Code001_SortSolution {
             int[] arr2 = copyArray(arr);
 
             comparator(arr1);
-            mergeSort(arr2);
+            quickSort(arr2,0,arr2.length-1);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;
                 ptintArr(arr);
@@ -167,7 +200,7 @@ public class Code001_SortSolution {
         int[] arr = generateRandomArray(10, 20);
         comparator(arr);
         ptintArr(arr);
-        mergeSort(arr);
+        quickSort(arr, 0, arr.length-1);
         ptintArr(arr);
     }
 }

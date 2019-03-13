@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8344d774-3d23-459b-9a98-bc53f9959749" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/course_ch1/Code004_NegativeSequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/course_ch1/Code001_SortSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course_ch1/Code001_SortSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/course_ch1/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course_ch1/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/course_ch1/Code001_SortSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/course_ch1/Code001_SortSolution.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,43 +20,47 @@
     <session id="-265966923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.114" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.73" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.81" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="15" />
-          <entry key="java" value="12643" />
-          <entry key="md" value="2121" />
+          <entry key="dummy" value="16" />
+          <entry key="java" value="14677" />
+          <entry key="md" value="2568" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12657" />
-          <entry key="Markdown" value="2107" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="JAVA" value="14691" />
+          <entry key="Markdown" value="2554" />
+          <entry key="PLAIN_TEXT" value="16" />
           <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="8" />
+          <entry key="java" value="9" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="9" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
@@ -63,31 +69,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/day2/NeewCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3036">
-              <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/note.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="349">
-                <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+              <first_editor relative-caret-position="814">
+                <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code004_NegativeSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="1122">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -95,17 +92,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code002_RecursionSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="550">
               <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code001_SortSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="83" column="5" lean-forward="true" selection-start-line="49" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="104">
+              <caret line="108" column="26" lean-forward="true" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+              <folding>
+                <element signature="e#3270#3271#0" expanded="true" />
+                <element signature="e#3302#3303#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -113,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code003_MinSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="1056">
               <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
             </state>
           </provider>
@@ -191,10 +201,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ch1/note.md" />
         <option value="$PROJECT_DIR$/src/main/java/course_ch1/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/course_ch1/Code002_RecursionSolution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/course_ch1/Code001_SortSolution.java" />
         <option value="$PROJECT_DIR$/src/main/java/course_ch1/Code003_MinSum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/course_ch1/note.md" />
         <option value="$PROJECT_DIR$/src/main/java/course_ch1/Code004_NegativeSequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/course_ch1/Code004_LessInleftBiggerinright.java" />
+        <option value="$PROJECT_DIR$/src/main/java/course_ch1/note.md" />
+        <option value="$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java" />
+        <option value="$PROJECT_DIR$/src/main/java/course_ch1/Code001_SortSolution.java" />
       </list>
     </option>
   </component>
@@ -226,7 +238,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1925" />
@@ -238,8 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,7 +320,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -327,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code004_NegativeSequence">
+  <component name="RunManager" selected="Application.Code001_SortSolution">
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -398,8 +410,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NeewCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day2.NeewCode" />
+    <configuration name="Code005_LessInleftBiggerinright" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course_ch1.Code005_LessInleftBiggerinright" />
       <module name="algotithm" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -431,19 +443,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NeewCode" />
       <item itemvalue="Application.Code001_SortSolution" />
       <item itemvalue="Application.Code002_RecursionSolution" />
       <item itemvalue="Application.Code003_MinSum" />
       <item itemvalue="Application.Code004_NegativeSequence" />
+      <item itemvalue="Application.Code005_LessInleftBiggerinright" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code001_SortSolution" />
+        <item itemvalue="Application.Code005_LessInleftBiggerinright" />
         <item itemvalue="Application.Code004_NegativeSequence" />
         <item itemvalue="Application.Code003_MinSum" />
-        <item itemvalue="Application.Code001_SortSolution" />
         <item itemvalue="Application.Code002_RecursionSolution" />
-        <item itemvalue="Application.NeewCode" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +472,11 @@
       <workItem from="1551354551275" duration="582000" />
       <workItem from="1551619086828" duration="114000" />
       <workItem from="1552221506877" duration="11927000" />
-      <workItem from="1552316918963" duration="4060000" />
+      <workItem from="1552316918963" duration="4373000" />
+      <workItem from="1552402205340" duration="5629000" />
+      <workItem from="1552407899294" duration="1240000" />
+      <workItem from="1552480869645" duration="2392000" />
+      <workItem from="1552484087954" duration="3765000" />
     </task>
     <servers />
   </component>
@@ -497,13 +513,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52326000" />
+    <option name="totallyTimeSpent" value="65665000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1540" height="848" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49264705" visible="true" weight="0.2755102" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49264705" visible="true" weight="0.22702703" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Structure" order="3" sideWeight="0.50735295" side_tool="true" weight="0.26891893" />
@@ -511,16 +527,16 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32753623" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.46029413" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32463768" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32352942" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Statistic" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.06231884" />
+      <window_info anchor="bottom" id="Statistic" order="9" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.40735295" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289855" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -576,6 +592,30 @@
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java</url>
+          <line>4</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java</url>
+          <line>5</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -589,6 +629,13 @@
     <expressions id="breakpointCondition">
       <expression>
         <expression-string>p2 ==3</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>(r-l+1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -613,6 +660,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3036">
           <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="814">
+            <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code004_NegativeSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code002_RecursionSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code003_MinSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -649,41 +727,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/note.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="349">
-            <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code005_LessInleftBiggerinright.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code001_SortSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="83" column="5" lean-forward="true" selection-start-line="49" selection-end-line="83" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code002_RecursionSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code003_MinSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/course_ch1/Code004_NegativeSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="104">
+          <caret line="108" column="26" lean-forward="true" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+          <folding>
+            <element signature="e#3270#3271#0" expanded="true" />
+            <element signature="e#3302#3303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
