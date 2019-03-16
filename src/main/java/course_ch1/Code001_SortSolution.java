@@ -193,7 +193,8 @@ public class Code001_SortSolution {
     }
 
     public static int[] generateRandomArray(int maxSize, int maxValue) {
-        int[] arr = new int[(int) (Math.random() * (maxSize + 1))];
+
+        int[] arr = new int[(int) (Math.random() * maxSize + 1)];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) ((int) (Math.random() * (maxValue + 1)) - maxValue * Math.random());
         }
