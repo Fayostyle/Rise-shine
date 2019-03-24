@@ -1,7 +1,7 @@
 package leetcode;
 
 public class LC55_JumpGame {
-    //递归回溯
+    //approach1 递归回溯
     public static  boolean canJump(int[] nums) {
         return canJumpFromPosition(0, nums);
     }
@@ -22,6 +22,7 @@ public class LC55_JumpGame {
     }
 
 
+    //appraoch2 dynamic solution Top-down 自顶向下递归存储中间态
     enum Index {
         GOOD, BAD, UNKNOWN
     }
@@ -52,6 +53,28 @@ public class LC55_JumpGame {
 
         memo[nums.length-1] = Index.GOOD;
         return canJumpFromPosition2(0, nums);
+    }
+
+
+    //approach3 dynamic solution Bottom-top 自顶向上，消除递归操作，提高性能
+    public boolean canJump3(int[] nums) {
+        Index[] memo = new Index[nums.length];
+        for (int i = 0; i < memo.length; i++) {
+            memo[i] = Index.UNKNOWN;
+        }
+        memo[memo.length - 1] = Index.GOOD;
+
+        for (int i = nums.length - 2; i >= 0; i--) {
+            int furthestJump = Math.min(i + nums[i], nums.length - 1);
+            for (int j = i + 1; j <= furthestJump; j++) {
+                if (memo[j] == Index.GOOD) {
+                    memo[i] = Index.GOOD;
+                    break;
+                }
+            }
+        }
+
+        return memo[0] == Index.GOOD;
     }
 
     public static void main(String[] args) {
