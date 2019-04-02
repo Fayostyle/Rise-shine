@@ -58,24 +58,26 @@ public class LC55_JumpGame {
 
     //approach3 dynamic solution Bottom-top 自顶向上，消除递归操作，提高性能
     public boolean canJump3(int[] nums) {
-        Index[] memo = new Index[nums.length];
-        for (int i = 0; i < memo.length; i++) {
-            memo[i] = Index.UNKNOWN;
+        Index[] memo3 = new Index[nums.length -1];
+        for(int i=0; i<nums.length; i++) {
+            memo3[i] = Index.UNKNOWN;
         }
-        memo[memo.length - 1] = Index.GOOD;
 
-        for (int i = nums.length - 2; i >= 0; i--) {
-            int furthestJump = Math.min(i + nums[i], nums.length - 1);
-            for (int j = i + 1; j <= furthestJump; j++) {
-                if (memo[j] == Index.GOOD) {
-                    memo[i] = Index.GOOD;
+        memo3[nums.length - 1] = Index.GOOD;
+
+        for(int i = nums.length - 2; i >=0; i--) {
+            int furthestJump = Math.min(nums.length - 1, i + nums[i]);
+            for(int j= i + 1; j<=furthestJump; j++) {
+                if(memo3[j] == Index.GOOD) {
+                    memo3[i] = Index.GOOD;
                     break;
                 }
             }
         }
 
-        return memo[0] == Index.GOOD;
+        return memo3[0] == Index.GOOD;
     }
+
 
     public static void main(String[] args) {
         canJump(new int[]{3,2,1,0,4});
