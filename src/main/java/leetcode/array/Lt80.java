@@ -34,7 +34,7 @@ class Lt80 {
 	
 	public int removeDuplicates2(int[] nums) {
 		int i=1, j=1,count=1;
-		while(i<nums.length) {
+		while(i<nums.length) { 
 			if(nums[i] == nums[i-1]) {
 				if(count > 1) {
 					i++;
