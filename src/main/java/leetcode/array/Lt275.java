@@ -1,4 +1,4 @@
-class Lt295 {
+class Lt275 {
 public int hIndex(int[] citations) {
 		if(citations == null || citations.length == 0 || citations[citations.length - 1] == 0) return 0;
 		
