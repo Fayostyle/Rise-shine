@@ -24,10 +24,10 @@ class Solution {
 		
 		if(m > n) {
 			int[] temp = nums1; nums1 = nums2; nums2 = temp;
-			int t = m; m=n; n = temp;
+			int t = m; m=n; n = t;
 		}
 		
-		int iMin = 0; iMax = m; halfLen = (m + n + 1) / 2;
+		int iMin = 0, iMax = m, halfLen = (m + n + 1) / 2;
 		while(iMin <= iMax) {
 			int i = (iMin + iMax) / 2;
 			int j = halfLen - i;
@@ -35,7 +35,7 @@ class Solution {
 		if(i < iMax && nums1[i] < nums2[j - 1]) {
 			iMin = i + 1;
 		}
-		else if(i > iMin && nums[i-1] > nums2[j]) {
+		else if(i > iMin && nums1[i-1] > nums2[j]) {
 			iMax = i - 1;
 		} else {
 			int maxLeft = 0;
@@ -48,7 +48,7 @@ class Solution {
 			} else {
 				maxLeft = Math.max(nums1[i-1], nums2[j-1]);
 			}
-			if((m + n) & 1 == 1) {
+			if((m + n & 1) == 1) {
 				return maxLeft;
 			}
 			
