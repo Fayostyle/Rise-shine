@@ -15,14 +15,29 @@
 输出：[[1,2],[3,10],[12,16]]
 解释：这是因为新的区间 [4,8] 与 [3,5],[6,7],[8,10] 重叠。
  
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/insert-interval
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 **/
 
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
+        int[][] res = new int[intervals.length + 1][];
+        if(intervals.length == 0) {
+            res[0] = newInterval;
+            return res;
+        }
+        int n1 = newInterval[0];
+        int n2 = newInterval[1];
+        for(int i=0; i<intervals.length; ) {
+            int[] cur = intervals[i];
+            int small = cur[0];
+            int big = cur[1];
+            while((n1 >= small && n1 <= big) || (n2 >= small && n2 <= big) || )) {
+                n1 = Math.min(small, n1);
+                n2 = Math.max(big, n2);
+                
+            }
+        }
 
+        int i = 0;
+        while()
     }
 }
