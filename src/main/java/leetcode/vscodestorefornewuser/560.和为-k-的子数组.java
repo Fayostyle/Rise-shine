@@ -45,7 +45,7 @@
 
 // @lc code=start
 class Solution {
-    public int subarraySum(int[] nums, int k) {
+/*     public int subarraySum(int[] nums, int k) {
         int[] preNum = new int[nums.length + 1];
         for(int i=1; i<=nums.length; i++) {
             preNum[i] = preNum[i-1] + nums[i-1];
@@ -61,7 +61,23 @@ class Solution {
         }
 
         return res;
-    }
+    } */
+
+    public int subarraySum(int[] nums, int k) {
+        HashMap<Integer, Integer> preSum = new HashMap<>();
+        int res = 0, sum0_i = 0;
+        preSum.put(0, 1);
+        for(int i=0; i<nums.length; i++) {
+            sum0_i += nums[i];
+            int sum0_j = sum0_i - k;
+            if(preSum.containsKey(sum0_j)) {
+                res += preSum.get(sum0_j);
+            }
+            preSum.put(sum0_i, preSum.getOrDefault(sum0_i, 0) + 1);
+        }
+
+        return res;
+    } 
 }
 // @lc code=end
 
