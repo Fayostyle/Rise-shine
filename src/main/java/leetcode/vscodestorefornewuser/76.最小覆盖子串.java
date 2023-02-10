@@ -69,6 +69,8 @@
 // @lc code=start
 class Solution {
     public String minWindow(String s, String t) {
+        //
+        int left = 0, right = 0;
 
     }
 }
